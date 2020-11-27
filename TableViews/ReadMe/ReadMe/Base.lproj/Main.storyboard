@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ro4-GJ-N9z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Library-->
+        <scene sceneID="YYB-My-bTJ">
+            <objects>
+                <tableViewController id="3P7-84-Sba" customClass="LibraryViewController" customModule="ReadMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="knh-cZ-YCg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" textLabel="AnF-Fq-EvP" imageView="6Ls-L9-57u" style="IBUITableViewCellStyleDefault" id="JpF-a4-lQs">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JpF-a4-lQs" id="k8u-DM-2hS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AnF-Fq-EvP">
+                                            <rect key="frame" x="61.5" y="0.0" width="332.5" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="book.fill" catalog="system" id="6Ls-L9-57u">
+                                            <rect key="frame" x="17.5" y="16" width="29" height="23.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            </preferredSymbolConfiguration>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fhZ-2o-in9" kind="show" destinationCreationSelector="showDetailView:" id="6Xb-Sy-Gh2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3P7-84-Sba" id="Oh7-RA-hMR"/>
+                            <outlet property="delegate" destination="3P7-84-Sba" id="pI5-Cc-8pj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Library" id="BFi-pL-Ude"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hno-iG-TDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471.0144927536232" y="71.651785714285708"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="GcR-pv-Qha">
+            <objects>
+                <viewController id="fhZ-2o-in9" userLabel="Detail View Controller" customClass="DetailViewController" customModule="ReadMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tc1-sB-SqV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="b5q-4i-cit">
+                                <rect key="frame" x="41.5" y="222.5" width="331" height="505"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-jZ-8Nl">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJv-Wo-YSX">
+                                        <rect key="frame" x="0.0" y="58.5" width="331" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S18-Cg-iNb">
+                                        <rect key="frame" x="0.0" y="110.5" width="331" height="330"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="S18-Cg-iNb" secondAttribute="height" multiplier="1:1" id="b1b-Tj-Hqv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-IT-p0P">
+                                        <rect key="frame" x="0.0" y="466" width="331" height="39"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Update Image"/>
+                                        <connections>
+                                            <action selector="updateImage" destination="fhZ-2o-in9" eventType="touchUpInside" id="AYs-hX-S2y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zYP-01-Foy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b5q-4i-cit" firstAttribute="centerX" secondItem="zYP-01-Foy" secondAttribute="centerX" id="AOy-RR-bNe"/>
+                            <constraint firstItem="b5q-4i-cit" firstAttribute="centerY" secondItem="zYP-01-Foy" secondAttribute="centerY" id="Euz-V9-g4m"/>
+                            <constraint firstItem="b5q-4i-cit" firstAttribute="width" secondItem="Tc1-sB-SqV" secondAttribute="width" multiplier="0.8" id="vb9-bw-7Ju"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vfl-cz-UH1"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="nJv-Wo-YSX" id="pfX-9N-Qq2"/>
+                        <outlet property="imageView" destination="S18-Cg-iNb" id="gS4-kS-s0G"/>
+                        <outlet property="titleLabel" destination="Ge4-jZ-8Nl" id="dMN-UK-vbx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfo-DJ-m0L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202.898550724638" y="71.651785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vh9-MD-bOF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ro4-GJ-N9z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UhJ-cw-yW0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3P7-84-Sba" kind="relationship" relationship="rootViewController" id="ne7-CD-h48"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3l-rz-D0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560.86956521739137" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.circle" catalog="system" width="128" height="121"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

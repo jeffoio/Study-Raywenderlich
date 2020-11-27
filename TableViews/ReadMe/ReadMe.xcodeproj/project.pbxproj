@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA592E72570DF890096CF46 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA592E62570DF890096CF46 /* DetailViewController.swift */; };
 		1FC02DC12570BD100005F404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC02DC02570BD100005F404 /* AppDelegate.swift */; };
 		1FC02DC32570BD100005F404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC02DC22570BD100005F404 /* SceneDelegate.swift */; };
 		1FC02DC52570BD100005F404 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC02DC42570BD100005F404 /* LibraryViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA592E62570DF890096CF46 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1FC02DBD2570BD100005F404 /* ReadMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC02DC02570BD100005F404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FC02DC22570BD100005F404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				1FC02DC22570BD100005F404 /* SceneDelegate.swift */,
 				1FC02DC42570BD100005F404 /* LibraryViewController.swift */,
 				1FC02DD62570BD960005F404 /* Book.swift */,
+				1FA592E62570DF890096CF46 /* DetailViewController.swift */,
 				1FC02DC62570BD100005F404 /* Main.storyboard */,
 				1FC02DC92570BD140005F404 /* Assets.xcassets */,
 				1FC02DCB2570BD140005F404 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				1FC02DD72570BD960005F404 /* Book.swift in Sources */,
 				1FC02DC52570BD100005F404 /* LibraryViewController.swift in Sources */,
 				1FC02DDA2570D73E0005F404 /* Library.swift in Sources */,
+				1FA592E72570DF890096CF46 /* DetailViewController.swift in Sources */,
 				1FC02DC12570BD100005F404 /* AppDelegate.swift in Sources */,
 				1FC02DC32570BD100005F404 /* SceneDelegate.swift in Sources */,
 			);
