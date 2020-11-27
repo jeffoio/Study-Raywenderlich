@@ -21,8 +21,8 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 
 <p float="left">
-  <img src="/Users/jeff/Documents/Raywenderlich/Table View Fundamentals/Image/Image1.png" alt="Image1" style="zoom:50%;" />
-  <img src="/Users/jeff/Documents/Raywenderlich/Table View Fundamentals/Image/Image2.png" alt="Image1" style="zoom:50%;" />
+  <img src="Image/Image1.png" alt="Image1" style="zoom:50%;" />
+  <img src="Image/Image2.png" alt="Image1" style="zoom:50%;" />
 </p>
 
   
