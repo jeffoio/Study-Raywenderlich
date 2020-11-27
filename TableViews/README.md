@@ -22,9 +22,9 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 
 
-<p float="left">
-  <img src="Image/Image1.png" alt="Image1" style="zoom:35%;" />
-  <img src="Image/Image2.png" alt="Image1" style="zoom:35%;" />
+<p float="left" align="center">
+  <img src="Image/Image1.png" alt="Image1" width="250" />
+  <img src="Image/Image2.png" alt="Image2" width="250" />
 </p>
 
 
