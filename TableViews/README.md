@@ -1,8 +1,8 @@
-### [Table Views](https://www.raywenderlich.com/10796666-table-views)
+# [Table Views](https://www.raywenderlich.com/10796666-table-views)
 
-[ReadMe App](ReadMe/)
+### Table View Fundamentals
 
-### DataSource
+#### Data Source
 
 데이터의 중간 관리자로 Table View가 필요한 행, 섹션의 갯수, 셀의 사본 등을 관리한다
 UITableViewDataSource 프로토콜을 채택하여 필수적으로 2가지 함수 numberOfRowsInSection, cellForRowAt 을 구현해야 한다
@@ -26,6 +26,16 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
   <img src="Image/Image1.png" alt="Image1" width="250" />
   <img src="Image/Image2.png" alt="Image2" width="250" />
 </p>
+
+
+
+
+### Customizing Table Views
+
+
+
+### Manage Rows
+
 
 
 

@@ -16,6 +16,7 @@
 		1FC02DCD2570BD140005F404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC02DCB2570BD140005F404 /* LaunchScreen.storyboard */; };
 		1FC02DD72570BD960005F404 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC02DD62570BD960005F404 /* Book.swift */; };
 		1FC02DDA2570D73E0005F404 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC02DD92570D73E0005F404 /* Library.swift */; };
+		1FC44E0D2574D67E00E80882 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC44E0C2574D67E00E80882 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1FC02DCE2570BD140005F404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC02DD62570BD960005F404 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1FC02DD92570D73E0005F404 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		1FC44E0C2574D67E00E80882 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				1FC02DC42570BD100005F404 /* LibraryViewController.swift */,
 				1FC02DD62570BD960005F404 /* Book.swift */,
 				1FA592E62570DF890096CF46 /* DetailViewController.swift */,
+				1FC44E0C2574D67E00E80882 /* BookCell.swift */,
 				1FC02DC62570BD100005F404 /* Main.storyboard */,
 				1FC02DC92570BD140005F404 /* Assets.xcassets */,
 				1FC02DCB2570BD140005F404 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				1FC02DD72570BD960005F404 /* Book.swift in Sources */,
 				1FC02DC52570BD100005F404 /* LibraryViewController.swift in Sources */,
 				1FC02DDA2570D73E0005F404 /* Library.swift in Sources */,
+				1FC44E0D2574D67E00E80882 /* BookCell.swift in Sources */,
 				1FA592E72570DF890096CF46 /* DetailViewController.swift in Sources */,
 				1FC02DC12570BD100005F404 /* AppDelegate.swift in Sources */,
 				1FC02DC32570BD100005F404 /* SceneDelegate.swift in Sources */,
