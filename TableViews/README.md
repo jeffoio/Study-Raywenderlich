@@ -30,15 +30,13 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 
 
-### Customizing Table Views
-
-
-
 ### Manage Rows
 
+DiffableDataSource
 
+테이블뷰, 콜렉션뷰 데이터를 변경하는 새로운 방식으로 iOS 13에서 처음 도입되었다
 
-
+https://medium.com/@tlimaye91/what-is-diffabledatasource-in-ios13-fcfcf5f27115
 
 
 
