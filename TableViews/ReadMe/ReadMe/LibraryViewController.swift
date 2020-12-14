@@ -34,6 +34,14 @@ class LibraryViewController: UITableViewController {
         updateDataSource()
     }
     
+    @IBAction func editing(_ sender: UIBarButtonItem) {
+        if tableView.isEditing {
+            tableView.isEditing = false
+        }else {
+            tableView.isEditing = true
+        }
+    }
+    
     @IBSegueAction func showDetailView(_ coder: NSCoder) -> DetailViewController? {
         guard let indePath = tableView.indexPathForSelectedRow, let book = dataSource.itemIdentifier(for: indePath) else {
             fatalError("nothing seletcted")}

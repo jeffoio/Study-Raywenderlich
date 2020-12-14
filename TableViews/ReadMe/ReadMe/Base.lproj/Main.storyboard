@@ -130,7 +130,13 @@
                             <outlet property="delegate" destination="3P7-84-Sba" id="pI5-Cc-8pj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Library" id="BFi-pL-Ude"/>
+                    <navigationItem key="navigationItem" title="My Library" id="BFi-pL-Ude">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="aZ9-08-uYO">
+                            <connections>
+                                <action selector="editing:" destination="3P7-84-Sba" id="hIr-tr-xzl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hno-iG-TDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

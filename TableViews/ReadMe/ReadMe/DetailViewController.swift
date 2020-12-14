@@ -27,7 +27,7 @@ class DetailViewController: UITableViewController {
             reviewTextView.text = review
         }
         let image = book.readMe ? LibrarySymbol.bookmarkFill.image : LibrarySymbol.bookmark.image
-        readMeButton.setImage(image, for: .normal)
+        //readMeButton.setImage(image, for: .normal)
         reviewTextView.addDoneButton()
     }
     
